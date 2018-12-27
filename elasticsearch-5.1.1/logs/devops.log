@@ -1,0 +1,63 @@
+[2018-12-27T11:41:19,003][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Bootstrap.initializeNatives(Bootstrap.java:100) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:176) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:306) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.SettingCommand.execute(SettingCommand.java:54) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:96) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.main(Command.java:62) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:89) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:82) [elasticsearch-5.1.1.jar:5.1.1]
+[2018-12-27T11:41:19,021][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [master] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.SettingCommand.execute(SettingCommand.java:54) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:96) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.main(Command.java:62) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:89) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:82) ~[elasticsearch-5.1.1.jar:5.1.1]
+Caused by: java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Bootstrap.initializeNatives(Bootstrap.java:100) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:176) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:306) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[elasticsearch-5.1.1.jar:5.1.1]
+	... 6 more
+[2018-12-27T11:42:11,407][INFO ][o.e.n.Node               ] [master] initializing ...
+[2018-12-27T11:42:11,504][INFO ][o.e.e.NodeEnvironment    ] [master] using [1] data paths, mounts [[/ (/dev/xvda1)]], net usable_space [5.2gb], net total_space [19.3gb], spins? [no], types [ext4]
+[2018-12-27T11:42:11,504][INFO ][o.e.e.NodeEnvironment    ] [master] heap size [1.9gb], compressed ordinary object pointers [true]
+[2018-12-27T11:42:11,505][INFO ][o.e.n.Node               ] [master] node name [master], node ID [43nUhJSXTiWL4DRcoyo6yA]
+[2018-12-27T11:42:11,509][INFO ][o.e.n.Node               ] [master] version[5.1.1], pid[11969], build[5395e21/2016-12-06T12:36:15.409Z], OS[Linux/4.4.0-1074-aws/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_191/25.191-b12]
+[2018-12-27T11:42:12,357][INFO ][o.e.p.PluginsService     ] [master] loaded module [aggs-matrix-stats]
+[2018-12-27T11:42:12,357][INFO ][o.e.p.PluginsService     ] [master] loaded module [ingest-common]
+[2018-12-27T11:42:12,357][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-expression]
+[2018-12-27T11:42:12,357][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-groovy]
+[2018-12-27T11:42:12,358][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-mustache]
+[2018-12-27T11:42:12,358][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-painless]
+[2018-12-27T11:42:12,358][INFO ][o.e.p.PluginsService     ] [master] loaded module [percolator]
+[2018-12-27T11:42:12,358][INFO ][o.e.p.PluginsService     ] [master] loaded module [reindex]
+[2018-12-27T11:42:12,358][INFO ][o.e.p.PluginsService     ] [master] loaded module [transport-netty3]
+[2018-12-27T11:42:12,358][INFO ][o.e.p.PluginsService     ] [master] loaded module [transport-netty4]
+[2018-12-27T11:42:12,359][INFO ][o.e.p.PluginsService     ] [master] no plugins loaded
+[2018-12-27T11:42:14,781][INFO ][o.e.n.Node               ] [master] initialized
+[2018-12-27T11:42:14,781][INFO ][o.e.n.Node               ] [master] starting ...
+[2018-12-27T11:42:14,966][INFO ][o.e.t.TransportService   ] [master] publish_address {10.155.73.183:9300}, bound_addresses {[::]:9300}
+[2018-12-27T11:42:14,971][INFO ][o.e.b.BootstrapCheck     ] [master] bound or publishing to a non-loopback or non-link-local address, enforcing bootstrap checks
+[2018-12-27T11:42:18,055][INFO ][o.e.c.s.ClusterService   ] [master] new_master {master}{43nUhJSXTiWL4DRcoyo6yA}{HBIij0e-QtKrxBEmfTYBLw}{10.155.73.183}{10.155.73.183:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2018-12-27T11:42:18,085][INFO ][o.e.h.HttpServer         ] [master] publish_address {10.155.73.183:9200}, bound_addresses {[::]:9200}
+[2018-12-27T11:42:18,085][INFO ][o.e.n.Node               ] [master] started
+[2018-12-27T11:42:18,090][INFO ][o.e.g.GatewayService     ] [master] recovered [0] indices into cluster_state
+[2018-12-27T11:44:22,834][INFO ][o.e.c.m.MetaDataCreateIndexService] [master] [.kibana] creating index, cause [api], templates [], shards [1]/[1], mappings [server, config]
+[2018-12-27T12:04:36,172][INFO ][o.e.c.m.MetaDataMappingService] [master] [.kibana/Y45FL5X_QvGN78DIXa1D9A] create_mapping [index-pattern]
+[2018-12-27T12:05:27,399][INFO ][o.e.c.m.MetaDataMappingService] [master] [.kibana/Y45FL5X_QvGN78DIXa1D9A] update_mapping [config]
+[2018-12-27T12:05:39,177][INFO ][o.e.c.m.MetaDataMappingService] [master] [.kibana/Y45FL5X_QvGN78DIXa1D9A] create_mapping [dashboard]
+[2018-12-27T12:08:25,116][INFO ][o.e.c.m.MetaDataMappingService] [master] [.kibana/Y45FL5X_QvGN78DIXa1D9A] create_mapping [search]
+[2018-12-27T12:10:11,822][INFO ][o.e.c.m.MetaDataMappingService] [master] [.kibana/Y45FL5X_QvGN78DIXa1D9A] update_mapping [config]
+[2018-12-27T12:21:52,913][INFO ][o.e.c.m.MetaDataMappingService] [master] [.kibana/Y45FL5X_QvGN78DIXa1D9A] create_mapping [timelion-sheet]
+[2018-12-27T12:25:31,509][INFO ][o.e.c.m.MetaDataCreateIndexService] [master] [devops] creating index, cause [api], templates [], shards [1]/[1], mappings [server, config]
+[2018-12-27T12:26:36,632][INFO ][o.e.n.Node               ] [master] stopping ...
+[2018-12-27T12:26:36,680][INFO ][o.e.n.Node               ] [master] stopped
+[2018-12-27T12:26:36,680][INFO ][o.e.n.Node               ] [master] closing ...
+[2018-12-27T12:26:36,688][INFO ][o.e.n.Node               ] [master] closed

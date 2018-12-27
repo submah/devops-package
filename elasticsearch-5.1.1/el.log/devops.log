@@ -1,0 +1,279 @@
+[2018-12-27T12:27:50,307][INFO ][o.e.n.Node               ] [master] initializing ...
+[2018-12-27T12:27:50,398][INFO ][o.e.e.NodeEnvironment    ] [master] using [1] data paths, mounts [[/ (/dev/xvda1)]], net usable_space [4.6gb], net total_space [19.3gb], spins? [no], types [ext4]
+[2018-12-27T12:27:50,398][INFO ][o.e.e.NodeEnvironment    ] [master] heap size [1.9gb], compressed ordinary object pointers [true]
+[2018-12-27T12:27:50,406][INFO ][o.e.n.Node               ] [master] node name [master], node ID [43nUhJSXTiWL4DRcoyo6yA]
+[2018-12-27T12:27:50,409][INFO ][o.e.n.Node               ] [master] version[5.1.1], pid[13300], build[5395e21/2016-12-06T12:36:15.409Z], OS[Linux/4.4.0-1074-aws/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_191/25.191-b12]
+[2018-12-27T12:27:51,394][INFO ][o.e.p.PluginsService     ] [master] loaded module [aggs-matrix-stats]
+[2018-12-27T12:27:51,394][INFO ][o.e.p.PluginsService     ] [master] loaded module [ingest-common]
+[2018-12-27T12:27:51,394][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-expression]
+[2018-12-27T12:27:51,394][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-groovy]
+[2018-12-27T12:27:51,394][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-mustache]
+[2018-12-27T12:27:51,394][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-painless]
+[2018-12-27T12:27:51,394][INFO ][o.e.p.PluginsService     ] [master] loaded module [percolator]
+[2018-12-27T12:27:51,394][INFO ][o.e.p.PluginsService     ] [master] loaded module [reindex]
+[2018-12-27T12:27:51,394][INFO ][o.e.p.PluginsService     ] [master] loaded module [transport-netty3]
+[2018-12-27T12:27:51,395][INFO ][o.e.p.PluginsService     ] [master] loaded module [transport-netty4]
+[2018-12-27T12:27:51,395][INFO ][o.e.p.PluginsService     ] [master] no plugins loaded
+[2018-12-27T12:27:54,102][INFO ][o.e.n.Node               ] [master] initialized
+[2018-12-27T12:27:54,102][INFO ][o.e.n.Node               ] [master] starting ...
+[2018-12-27T12:27:54,296][INFO ][o.e.t.TransportService   ] [master] publish_address {10.155.73.183:9300}, bound_addresses {[::]:9300}
+[2018-12-27T12:27:54,301][INFO ][o.e.b.BootstrapCheck     ] [master] bound or publishing to a non-loopback or non-link-local address, enforcing bootstrap checks
+[2018-12-27T12:27:57,391][INFO ][o.e.c.s.ClusterService   ] [master] new_master {master}{43nUhJSXTiWL4DRcoyo6yA}{_0NMqcQuTGKVnaPctN6Uiw}{10.155.73.183}{10.155.73.183:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2018-12-27T12:27:57,425][INFO ][o.e.h.HttpServer         ] [master] publish_address {10.155.73.183:9200}, bound_addresses {[::]:9200}
+[2018-12-27T12:27:57,426][INFO ][o.e.n.Node               ] [master] started
+[2018-12-27T12:27:57,573][INFO ][o.e.g.GatewayService     ] [master] recovered [2] indices into cluster_state
+[2018-12-27T12:27:57,789][INFO ][o.e.c.r.a.AllocationService] [master] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[devops][0]] ...]).
+[2018-12-27T12:29:00,645][INFO ][o.e.c.m.MetaDataCreateIndexService] [master] [logstash-2018.12.27] creating index, cause [auto(bulk api)], templates [logstash], shards [5]/[1], mappings [_default_]
+[2018-12-27T12:29:00,828][INFO ][o.e.c.m.MetaDataMappingService] [master] [logstash-2018.12.27/6tOD4E9DQ1Cs3JpeCH059w] create_mapping [doc]
+[2018-12-27T12:30:11,027][INFO ][o.e.c.m.MetaDataMappingService] [master] [devops/MK5uu4koTPS55_LH-N_POA] create_mapping [index-pattern]
+[2018-12-27T12:30:35,720][INFO ][o.e.c.m.MetaDataMappingService] [master] [devops/MK5uu4koTPS55_LH-N_POA] update_mapping [config]
+[2018-12-27T12:30:54,149][INFO ][o.e.c.m.MetaDataMappingService] [master] [devops/MK5uu4koTPS55_LH-N_POA] create_mapping [search]
+[2018-12-27T12:48:04,120][INFO ][o.e.c.m.MetaDataMappingService] [master] [devops/MK5uu4koTPS55_LH-N_POA] create_mapping [dashboard]
+[2018-12-27T12:49:50,724][INFO ][o.e.c.m.MetaDataMappingService] [master] [devops/MK5uu4koTPS55_LH-N_POA] create_mapping [timelion-sheet]
+[2018-12-27T12:50:16,629][INFO ][o.e.c.m.MetaDataMappingService] [master] [devops/MK5uu4koTPS55_LH-N_POA] update_mapping [config]
+[2018-12-27T13:30:09,465][INFO ][o.e.n.Node               ] [master] initializing ...
+[2018-12-27T13:30:09,582][INFO ][o.e.e.NodeEnvironment    ] [master] using [1] data paths, mounts [[/ (/dev/xvda1)]], net usable_space [4.4gb], net total_space [19.3gb], spins? [no], types [ext4]
+[2018-12-27T13:30:09,582][INFO ][o.e.e.NodeEnvironment    ] [master] heap size [1.9gb], compressed ordinary object pointers [true]
+[2018-12-27T13:30:09,611][INFO ][o.e.n.Node               ] [master] node name [master], node ID [43nUhJSXTiWL4DRcoyo6yA]
+[2018-12-27T13:30:09,614][INFO ][o.e.n.Node               ] [master] version[5.1.1], pid[15244], build[5395e21/2016-12-06T12:36:15.409Z], OS[Linux/4.4.0-1074-aws/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_191/25.191-b12]
+[2018-12-27T13:30:11,182][INFO ][o.e.p.PluginsService     ] [master] loaded module [aggs-matrix-stats]
+[2018-12-27T13:30:11,183][INFO ][o.e.p.PluginsService     ] [master] loaded module [ingest-common]
+[2018-12-27T13:30:11,183][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-expression]
+[2018-12-27T13:30:11,183][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-groovy]
+[2018-12-27T13:30:11,183][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-mustache]
+[2018-12-27T13:30:11,183][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-painless]
+[2018-12-27T13:30:11,183][INFO ][o.e.p.PluginsService     ] [master] loaded module [percolator]
+[2018-12-27T13:30:11,184][INFO ][o.e.p.PluginsService     ] [master] loaded module [reindex]
+[2018-12-27T13:30:11,184][INFO ][o.e.p.PluginsService     ] [master] loaded module [transport-netty3]
+[2018-12-27T13:30:11,187][INFO ][o.e.p.PluginsService     ] [master] loaded module [transport-netty4]
+[2018-12-27T13:30:11,188][INFO ][o.e.p.PluginsService     ] [master] no plugins loaded
+[2018-12-27T13:30:15,685][INFO ][o.e.n.Node               ] [master] initialized
+[2018-12-27T13:30:15,692][INFO ][o.e.n.Node               ] [master] starting ...
+[2018-12-27T13:30:15,972][INFO ][o.e.t.TransportService   ] [master] publish_address {10.155.73.183:9300}, bound_addresses {[::]:9300}
+[2018-12-27T13:30:15,978][INFO ][o.e.b.BootstrapCheck     ] [master] bound or publishing to a non-loopback or non-link-local address, enforcing bootstrap checks
+[2018-12-27T13:30:19,137][INFO ][o.e.c.s.ClusterService   ] [master] new_master {master}{43nUhJSXTiWL4DRcoyo6yA}{zFWJ89ZYR2Ogrr3Gf_b4yg}{10.155.73.183}{10.155.73.183:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2018-12-27T13:30:19,232][INFO ][o.e.h.HttpServer         ] [master] publish_address {10.155.73.183:9200}, bound_addresses {[::]:9200}
+[2018-12-27T13:30:19,236][INFO ][o.e.n.Node               ] [master] started
+[2018-12-27T13:30:19,723][INFO ][o.e.g.GatewayService     ] [master] recovered [3] indices into cluster_state
+[2018-12-27T13:30:20,514][INFO ][o.e.c.r.a.AllocationService] [master] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-2018.12.27][1], [logstash-2018.12.27][4]] ...]).
+[2018-12-27T13:43:54,002][INFO ][o.e.c.m.MetaDataMappingService] [master] [logstash-2018.12.27/6tOD4E9DQ1Cs3JpeCH059w] create_mapping [logs]
+[2018-12-27T13:57:10,991][INFO ][o.e.c.m.MetaDataCreateIndexService] [master] [filebeat-2018.12.27] creating index, cause [auto(bulk api)], templates [filebeat], shards [5]/[1], mappings [_default_]
+[2018-12-27T13:57:11,125][INFO ][o.e.c.m.MetaDataMappingService] [master] [filebeat-2018.12.27/FMLLvUtHS8mTbTHKzlGXwQ] create_mapping [log]
+[2018-12-27T14:10:43,062][INFO ][o.e.c.m.MetaDataMappingService] [master] [logstash-2018.12.27/6tOD4E9DQ1Cs3JpeCH059w] create_mapping [log]
+[2018-12-27T14:13:09,720][INFO ][o.e.c.m.MetaDataMappingService] [master] [devops/MK5uu4koTPS55_LH-N_POA] create_mapping [visualization]
+[2018-12-27T15:16:04,992][INFO ][o.e.n.Node               ] [master] stopping ...
+[2018-12-27T15:16:05,124][INFO ][o.e.n.Node               ] [master] stopped
+[2018-12-27T15:16:05,124][INFO ][o.e.n.Node               ] [master] closing ...
+[2018-12-27T15:16:05,151][INFO ][o.e.n.Node               ] [master] closed
+[2018-12-27T15:52:53,403][INFO ][o.e.n.Node               ] [master] initializing ...
+[2018-12-27T15:52:53,548][INFO ][o.e.e.NodeEnvironment    ] [master] using [1] data paths, mounts [[/ (/dev/xvda1)]], net usable_space [4.5gb], net total_space [19.3gb], spins? [no], types [ext4]
+[2018-12-27T15:52:53,548][INFO ][o.e.e.NodeEnvironment    ] [master] heap size [1.9gb], compressed ordinary object pointers [true]
+[2018-12-27T15:52:53,597][INFO ][o.e.n.Node               ] [master] node name [master], node ID [43nUhJSXTiWL4DRcoyo6yA]
+[2018-12-27T15:52:53,602][INFO ][o.e.n.Node               ] [master] version[5.1.1], pid[32101], build[5395e21/2016-12-06T12:36:15.409Z], OS[Linux/4.4.0-1074-aws/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_191/25.191-b12]
+[2018-12-27T15:52:55,169][INFO ][o.e.p.PluginsService     ] [master] loaded module [aggs-matrix-stats]
+[2018-12-27T15:52:55,169][INFO ][o.e.p.PluginsService     ] [master] loaded module [ingest-common]
+[2018-12-27T15:52:55,170][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-expression]
+[2018-12-27T15:52:55,170][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-groovy]
+[2018-12-27T15:52:55,170][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-mustache]
+[2018-12-27T15:52:55,170][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-painless]
+[2018-12-27T15:52:55,170][INFO ][o.e.p.PluginsService     ] [master] loaded module [percolator]
+[2018-12-27T15:52:55,171][INFO ][o.e.p.PluginsService     ] [master] loaded module [reindex]
+[2018-12-27T15:52:55,171][INFO ][o.e.p.PluginsService     ] [master] loaded module [transport-netty3]
+[2018-12-27T15:52:55,171][INFO ][o.e.p.PluginsService     ] [master] loaded module [transport-netty4]
+[2018-12-27T15:52:55,172][INFO ][o.e.p.PluginsService     ] [master] no plugins loaded
+[2018-12-27T15:52:59,537][INFO ][o.e.n.Node               ] [master] initialized
+[2018-12-27T15:52:59,540][INFO ][o.e.n.Node               ] [master] starting ...
+[2018-12-27T15:52:59,823][INFO ][o.e.t.TransportService   ] [master] publish_address {10.155.73.183:9300}, bound_addresses {[::]:9300}
+[2018-12-27T15:52:59,841][INFO ][o.e.b.BootstrapCheck     ] [master] bound or publishing to a non-loopback or non-link-local address, enforcing bootstrap checks
+[2018-12-27T15:53:03,089][INFO ][o.e.c.s.ClusterService   ] [master] new_master {master}{43nUhJSXTiWL4DRcoyo6yA}{1nrUINRWQieDOlp-eo40xg}{10.155.73.183}{10.155.73.183:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2018-12-27T15:53:03,169][INFO ][o.e.h.HttpServer         ] [master] publish_address {10.155.73.183:9200}, bound_addresses {[::]:9200}
+[2018-12-27T15:53:03,170][INFO ][o.e.n.Node               ] [master] started
+[2018-12-27T15:53:03,694][INFO ][o.e.g.GatewayService     ] [master] recovered [4] indices into cluster_state
+[2018-12-27T15:53:04,643][INFO ][o.e.c.r.a.AllocationService] [master] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[devops][0], [.kibana][0]] ...]).
+[2018-12-27T15:53:33,466][INFO ][o.e.n.Node               ] [master] stopping ...
+[2018-12-27T15:53:33,624][INFO ][o.e.n.Node               ] [master] stopped
+[2018-12-27T15:53:33,624][INFO ][o.e.n.Node               ] [master] closing ...
+[2018-12-27T15:53:33,635][INFO ][o.e.n.Node               ] [master] closed
+[2018-12-27T16:30:18,338][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Bootstrap.initializeNatives(Bootstrap.java:100) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:176) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:306) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.SettingCommand.execute(SettingCommand.java:54) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:96) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.main(Command.java:62) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:89) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:82) [elasticsearch-5.1.1.jar:5.1.1]
+[2018-12-27T16:30:18,360][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [master] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.SettingCommand.execute(SettingCommand.java:54) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:96) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.main(Command.java:62) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:89) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:82) ~[elasticsearch-5.1.1.jar:5.1.1]
+Caused by: java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Bootstrap.initializeNatives(Bootstrap.java:100) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:176) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:306) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[elasticsearch-5.1.1.jar:5.1.1]
+	... 6 more
+[2018-12-27T16:32:37,376][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Bootstrap.initializeNatives(Bootstrap.java:100) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:176) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:306) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.SettingCommand.execute(SettingCommand.java:54) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:96) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.main(Command.java:62) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:89) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:82) [elasticsearch-5.1.1.jar:5.1.1]
+[2018-12-27T16:32:37,390][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [master] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.SettingCommand.execute(SettingCommand.java:54) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:96) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.main(Command.java:62) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:89) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:82) ~[elasticsearch-5.1.1.jar:5.1.1]
+Caused by: java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Bootstrap.initializeNatives(Bootstrap.java:100) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:176) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:306) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[elasticsearch-5.1.1.jar:5.1.1]
+	... 6 more
+[2018-12-27T16:34:05,622][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Bootstrap.initializeNatives(Bootstrap.java:100) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:176) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:306) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.SettingCommand.execute(SettingCommand.java:54) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:96) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.main(Command.java:62) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:89) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:82) [elasticsearch-5.1.1.jar:5.1.1]
+[2018-12-27T16:34:05,636][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [master] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.SettingCommand.execute(SettingCommand.java:54) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:96) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.main(Command.java:62) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:89) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:82) ~[elasticsearch-5.1.1.jar:5.1.1]
+Caused by: java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Bootstrap.initializeNatives(Bootstrap.java:100) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:176) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:306) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[elasticsearch-5.1.1.jar:5.1.1]
+	... 6 more
+[2018-12-27T16:34:11,735][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Bootstrap.initializeNatives(Bootstrap.java:100) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:176) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:306) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.SettingCommand.execute(SettingCommand.java:54) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:96) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.main(Command.java:62) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:89) [elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:82) [elasticsearch-5.1.1.jar:5.1.1]
+[2018-12-27T16:34:11,762][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [master] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.SettingCommand.execute(SettingCommand.java:54) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:96) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.cli.Command.main(Command.java:62) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:89) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:82) ~[elasticsearch-5.1.1.jar:5.1.1]
+Caused by: java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Bootstrap.initializeNatives(Bootstrap.java:100) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:176) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:306) ~[elasticsearch-5.1.1.jar:5.1.1]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[elasticsearch-5.1.1.jar:5.1.1]
+	... 6 more
+[2018-12-27T16:37:54,739][INFO ][o.e.n.Node               ] [master] initializing ...
+[2018-12-27T16:37:54,830][INFO ][o.e.e.NodeEnvironment    ] [master] using [1] data paths, mounts [[/ (/dev/xvda1)]], net usable_space [4.5gb], net total_space [19.3gb], spins? [no], types [ext4]
+[2018-12-27T16:37:54,831][INFO ][o.e.e.NodeEnvironment    ] [master] heap size [1.9gb], compressed ordinary object pointers [true]
+[2018-12-27T16:37:54,866][INFO ][o.e.n.Node               ] [master] node name [master], node ID [43nUhJSXTiWL4DRcoyo6yA]
+[2018-12-27T16:37:54,871][INFO ][o.e.n.Node               ] [master] version[5.1.1], pid[5634], build[5395e21/2016-12-06T12:36:15.409Z], OS[Linux/4.4.0-1074-aws/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_191/25.191-b12]
+[2018-12-27T16:37:56,425][INFO ][o.e.p.PluginsService     ] [master] loaded module [aggs-matrix-stats]
+[2018-12-27T16:37:56,425][INFO ][o.e.p.PluginsService     ] [master] loaded module [ingest-common]
+[2018-12-27T16:37:56,426][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-expression]
+[2018-12-27T16:37:56,426][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-groovy]
+[2018-12-27T16:37:56,426][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-mustache]
+[2018-12-27T16:37:56,426][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-painless]
+[2018-12-27T16:37:56,426][INFO ][o.e.p.PluginsService     ] [master] loaded module [percolator]
+[2018-12-27T16:37:56,426][INFO ][o.e.p.PluginsService     ] [master] loaded module [reindex]
+[2018-12-27T16:37:56,426][INFO ][o.e.p.PluginsService     ] [master] loaded module [transport-netty3]
+[2018-12-27T16:37:56,426][INFO ][o.e.p.PluginsService     ] [master] loaded module [transport-netty4]
+[2018-12-27T16:37:56,426][INFO ][o.e.p.PluginsService     ] [master] no plugins loaded
+[2018-12-27T16:38:00,899][INFO ][o.e.n.Node               ] [master] initialized
+[2018-12-27T16:38:00,900][INFO ][o.e.n.Node               ] [master] starting ...
+[2018-12-27T16:38:01,159][INFO ][o.e.t.TransportService   ] [master] publish_address {10.155.73.183:9300}, bound_addresses {[::]:9300}
+[2018-12-27T16:38:01,171][INFO ][o.e.b.BootstrapCheck     ] [master] bound or publishing to a non-loopback or non-link-local address, enforcing bootstrap checks
+[2018-12-27T16:38:04,364][INFO ][o.e.c.s.ClusterService   ] [master] new_master {master}{43nUhJSXTiWL4DRcoyo6yA}{0Qbgo1DRQVavm4kacQ-KfQ}{10.155.73.183}{10.155.73.183:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2018-12-27T16:38:04,452][INFO ][o.e.h.HttpServer         ] [master] publish_address {10.155.73.183:9200}, bound_addresses {[::]:9200}
+[2018-12-27T16:38:04,452][INFO ][o.e.n.Node               ] [master] started
+[2018-12-27T16:38:04,896][INFO ][o.e.g.GatewayService     ] [master] recovered [4] indices into cluster_state
+[2018-12-27T16:38:05,790][INFO ][o.e.c.r.a.AllocationService] [master] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-2018.12.27][2], [logstash-2018.12.27][3], [devops][0], [.kibana][0]] ...]).
+[2018-12-27T16:58:38,976][INFO ][o.e.n.Node               ] [master] initializing ...
+[2018-12-27T16:58:39,087][INFO ][o.e.e.NodeEnvironment    ] [master] using [1] data paths, mounts [[/ (/dev/xvda1)]], net usable_space [4.5gb], net total_space [19.3gb], spins? [no], types [ext4]
+[2018-12-27T16:58:39,088][INFO ][o.e.e.NodeEnvironment    ] [master] heap size [1.9gb], compressed ordinary object pointers [true]
+[2018-12-27T16:58:39,131][INFO ][o.e.n.Node               ] [master] node name [master], node ID [43nUhJSXTiWL4DRcoyo6yA]
+[2018-12-27T16:58:39,134][INFO ][o.e.n.Node               ] [master] version[5.1.1], pid[8247], build[5395e21/2016-12-06T12:36:15.409Z], OS[Linux/4.4.0-1074-aws/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_191/25.191-b12]
+[2018-12-27T16:58:40,769][INFO ][o.e.p.PluginsService     ] [master] loaded module [aggs-matrix-stats]
+[2018-12-27T16:58:40,769][INFO ][o.e.p.PluginsService     ] [master] loaded module [ingest-common]
+[2018-12-27T16:58:40,769][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-expression]
+[2018-12-27T16:58:40,769][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-groovy]
+[2018-12-27T16:58:40,769][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-mustache]
+[2018-12-27T16:58:40,769][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-painless]
+[2018-12-27T16:58:40,769][INFO ][o.e.p.PluginsService     ] [master] loaded module [percolator]
+[2018-12-27T16:58:40,770][INFO ][o.e.p.PluginsService     ] [master] loaded module [reindex]
+[2018-12-27T16:58:40,770][INFO ][o.e.p.PluginsService     ] [master] loaded module [transport-netty3]
+[2018-12-27T16:58:40,770][INFO ][o.e.p.PluginsService     ] [master] loaded module [transport-netty4]
+[2018-12-27T16:58:40,770][INFO ][o.e.p.PluginsService     ] [master] no plugins loaded
+[2018-12-27T16:58:45,487][INFO ][o.e.n.Node               ] [master] initialized
+[2018-12-27T16:58:45,487][INFO ][o.e.n.Node               ] [master] starting ...
+[2018-12-27T16:58:45,813][INFO ][o.e.t.TransportService   ] [master] publish_address {10.155.73.183:9300}, bound_addresses {[::]:9300}
+[2018-12-27T16:58:45,819][INFO ][o.e.b.BootstrapCheck     ] [master] bound or publishing to a non-loopback or non-link-local address, enforcing bootstrap checks
+[2018-12-27T16:58:49,076][INFO ][o.e.c.s.ClusterService   ] [master] new_master {master}{43nUhJSXTiWL4DRcoyo6yA}{4NzdupkkRla4sLw49i9yWw}{10.155.73.183}{10.155.73.183:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2018-12-27T16:58:49,133][INFO ][o.e.h.HttpServer         ] [master] publish_address {10.155.73.183:9200}, bound_addresses {[::]:9200}
+[2018-12-27T16:58:49,133][INFO ][o.e.n.Node               ] [master] started
+[2018-12-27T16:58:49,589][INFO ][o.e.g.GatewayService     ] [master] recovered [4] indices into cluster_state
+[2018-12-27T16:58:50,335][INFO ][o.e.c.r.a.AllocationService] [master] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[devops][0], [.kibana][0]] ...]).
+[2018-12-27T17:00:02,076][INFO ][o.e.n.Node               ] [master] initializing ...
+[2018-12-27T17:00:02,179][INFO ][o.e.e.NodeEnvironment    ] [master] using [1] data paths, mounts [[/ (/dev/xvda1)]], net usable_space [4.5gb], net total_space [19.3gb], spins? [no], types [ext4]
+[2018-12-27T17:00:02,179][INFO ][o.e.e.NodeEnvironment    ] [master] heap size [1.9gb], compressed ordinary object pointers [true]
+[2018-12-27T17:00:02,231][INFO ][o.e.n.Node               ] [master] node name [master], node ID [43nUhJSXTiWL4DRcoyo6yA]
+[2018-12-27T17:00:02,234][INFO ][o.e.n.Node               ] [master] version[5.1.1], pid[8475], build[5395e21/2016-12-06T12:36:15.409Z], OS[Linux/4.4.0-1074-aws/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_191/25.191-b12]
+[2018-12-27T17:00:03,745][INFO ][o.e.p.PluginsService     ] [master] loaded module [aggs-matrix-stats]
+[2018-12-27T17:00:03,746][INFO ][o.e.p.PluginsService     ] [master] loaded module [ingest-common]
+[2018-12-27T17:00:03,746][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-expression]
+[2018-12-27T17:00:03,753][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-groovy]
+[2018-12-27T17:00:03,753][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-mustache]
+[2018-12-27T17:00:03,753][INFO ][o.e.p.PluginsService     ] [master] loaded module [lang-painless]
+[2018-12-27T17:00:03,753][INFO ][o.e.p.PluginsService     ] [master] loaded module [percolator]
+[2018-12-27T17:00:03,753][INFO ][o.e.p.PluginsService     ] [master] loaded module [reindex]
+[2018-12-27T17:00:03,753][INFO ][o.e.p.PluginsService     ] [master] loaded module [transport-netty3]
+[2018-12-27T17:00:03,753][INFO ][o.e.p.PluginsService     ] [master] loaded module [transport-netty4]
+[2018-12-27T17:00:03,754][INFO ][o.e.p.PluginsService     ] [master] no plugins loaded
+[2018-12-27T17:00:08,167][INFO ][o.e.n.Node               ] [master] initialized
+[2018-12-27T17:00:08,167][INFO ][o.e.n.Node               ] [master] starting ...
+[2018-12-27T17:00:08,423][INFO ][o.e.t.TransportService   ] [master] publish_address {10.155.73.183:9300}, bound_addresses {[::]:9300}
+[2018-12-27T17:00:08,428][INFO ][o.e.b.BootstrapCheck     ] [master] bound or publishing to a non-loopback or non-link-local address, enforcing bootstrap checks
+[2018-12-27T17:00:11,582][INFO ][o.e.c.s.ClusterService   ] [master] new_master {master}{43nUhJSXTiWL4DRcoyo6yA}{oAFExn-wT32VmTlTxmINbw}{10.155.73.183}{10.155.73.183:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2018-12-27T17:00:11,669][INFO ][o.e.h.HttpServer         ] [master] publish_address {10.155.73.183:9200}, bound_addresses {[::]:9200}
+[2018-12-27T17:00:11,669][INFO ][o.e.n.Node               ] [master] started
+[2018-12-27T17:00:12,131][INFO ][o.e.g.GatewayService     ] [master] recovered [4] indices into cluster_state
+[2018-12-27T17:00:12,840][INFO ][o.e.c.r.a.AllocationService] [master] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[logstash-2018.12.27][4], [.kibana][0]] ...]).

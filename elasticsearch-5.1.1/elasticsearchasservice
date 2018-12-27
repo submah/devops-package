@@ -1,0 +1,48 @@
+# #!/bin/bash
+# description: Tomcat Start Stop Restart
+
+# processname: tomcat
+
+# chkconfig: 234 20 80
+NAME=elasticsearch
+
+export NAME
+
+ES_HOME=/tmp/package/elasticsearch
+
+export ES_HOME
+
+PATH=$ES_HOME/bin:$PATH
+
+export PATH
+PID=/tmp/package/$NAME/$NAME.pid
+
+case $1 in
+
+start)
+
+sh $ES_HOME/bin/$NAME -d -p $PID 
+echo -e "Service started with PID: `cat $PID`\n"
+
+;;
+
+stop)
+
+#sh $CATALINA_HOME/bin/shutdown.sh
+echo -e "Killing the service\n"
+kill -9 `cat $PID`
+;;
+
+restart)
+
+echo -e "Stopping hte service...\n\n"
+kill -i `cat $PID`
+sleep 2
+echo -e "Starting the service with PID: $PID\n\n"
+sh $ES_HOME/bin/$NAME -d -p $PID
+;;
+
+esac
+
+exit 0
+
