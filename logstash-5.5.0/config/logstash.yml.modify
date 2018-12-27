@@ -1,0 +1,43 @@
+input {
+  file {
+    type => "tomcat"
+    path => "/opt/tomcat/logs/catalina.out"
+    start_position => "beginning"
+    add_field => {
+      "server"  =>  "dev"
+      "app"     =>  "devops"
+    }
+  }
+  stdin { }
+}
+
+filter {
+  if [type] == "apache" {
+    grok {
+      match => { "message" => "%{COMBINEDAPACHELOG}" }
+    }
+    date {
+      match => [ "timestamp" , "dd/MMM/yyyy:HH:mm:ss Z" ]
+    }
+  }
+  if [type] == "tomcat" {
+    grok {
+      match => [ "message", "%{TOMCATLOG}", "message", "%{CATALINALOG}" ]
+    }
+    date {
+      match => [ "timestamp", "yyyy-MM-dd HH:mm:ss,SSS Z", "MMM dd, yyyy HH:mm:ss a" ]
+    }
+  }
+
+}
+
+output {
+  elasticsearch {
+    hosts => ["10.155.73.183:9200"]
+  }
+  stdout {
+    codec => rubydebug
+  }
+
+}
+
