@@ -1,0 +1,5 @@
+Found java executable in JAVA_HOME (/usr/lib/jvm/java-8-oracle)
+ln: failed to create symbolic link '/opt/artifactory-oss-6.6.0/tomcat/logs/catalina': File exists
+
+[31m** Could not create link from /opt/artifactory-oss-6.6.0/tomcat/logs to /opt/artifactory-oss-6.6.0/logs/catalina[0m
+

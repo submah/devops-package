@@ -1,0 +1,553 @@
+2018-12-26 15:45:42,800 [art-init] [INFO ] (o.a.w.s.ArtifactoryContextConfigListener:268) - 
+                _   _  __           _                      ____   _____ _____
+     /\        | | (_)/ _|         | |                    / __ \ / ____/ ____|
+    /  \   _ __| |_ _| |_ __ _  ___| |_ ___  _ __ _   _  | |  | | (___| (___
+   / /\ \ | '__| __| |  _/ _` |/ __| __/ _ \| '__| | | | | |  | |\___ \\___ \
+  / ____ \| |  | |_| | || (_| | (__| || (_) | |  | |_| | | |__| |____) |___) |
+ /_/    \_\_|   \__|_|_| \__,_|\___|\__\___/|_|   \__, |  \____/|_____/_____/
+ Version:  6.6.0                                   __/ |
+ Revision: 60600900                               |___/
+ Artifactory Home: '/opt/artifactory-oss-6.6.0'
+
+2018-12-26 15:45:43,045 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:498) - Artifactory application context set to NOT READY by refresh
+2018-12-26 15:45:43,046 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:238) - Refreshing artifactory: startup date [Wed Dec 26 15:45:43 UTC 2018]; root of context hierarchy
+2018-12-26 15:45:49,205 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:242) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579) Pool: derby
+2018-12-26 15:45:49,205 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:245) - Connection URL: jdbc:derby:/opt/artifactory-oss-6.6.0/data/derby
+2018-12-26 15:45:51,111 [art-init] [INFO ] (o.j.s.b.p.t.BinaryProviderClassScanner:76) - Added 'blob' from jar:file:/opt/artifactory-oss-6.6.0/tomcat/webapps/artifactory/WEB-INF/lib/artifactory-storage-db-6.6.0.jar!/
+2018-12-26 15:45:51,134 [art-init] [INFO ] (o.j.s.b.p.t.BinaryProviderClassScanner:76) - Added 'empty, external-file, external-wrapper, file-system, cache-fs, retry' from jar:file:/opt/artifactory-oss-6.6.0/tomcat/webapps/artifactory/WEB-INF/lib/binary-store-core-3.1.30.jar!/
+2018-12-26 15:45:54,352 [art-init] [INFO ] (o.a.s.ArtifactorySchedulerFactoryBean:647) - Starting Quartz Scheduler now
+2018-12-26 15:45:54,506 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:245) - Artifactory context starting up 39 Spring Beans...
+2018-12-26 15:45:55,057 [art-init] [INFO ] (o.a.s.a.AccessServiceImpl:408) - Initialized new service id: jfrt@01czmwx9zhw05x06qpcqgd03g9
+2018-12-26 15:45:55,100 [art-init] [INFO ] (o.j.s.c.EncryptionWrapperFactory:33) - createArtifactoryKeyWrapper  EncryptionWrapperBase{ encodingType=ARTIFACTORY_MASTER, topEncrypter=BytesEncrypterBase{ Cipher='AES128',  keyId='29YTQ'}, formatUsed=DotFormat, decrypters=[BytesEncrypterBase{ Cipher='AES128',  keyId='29YTQ'}]}
+2018-12-26 15:45:55,327 [art-init] [INFO ] (o.a.s.a.ArtifactoryAccessClientConfigStore:663) - Using Access Server URL: http://localhost:8040/access (bundled) source: detected
+2018-12-26 15:45:55,944 [art-init] [INFO ] (o.a.s.a.AccessServiceImpl:347) - Waiting for access server...
+2018-12-26 15:45:58,612 [art-init] [INFO ] (o.a.s.a.AccessServiceImpl:354) - Got response from Access server after 2662 ms, continuing.
+2018-12-26 15:45:58,842 [art-init] [INFO ] (o.a.s.a.AccessServiceImpl:304) - Initialized access service successfully with client id 1155800350, closing old client id [null]
+2018-12-26 15:45:58,843 [art-init] [INFO ] (o.a.s.a.AccessServiceImpl:1149) - Updating access configuration with password expiration data
+2018-12-26 15:45:59,249 [art-init] [INFO ] (o.a.i.InfoWriter    :87) - 
+
+ SYSTEM INFORMATION DUMP
+ =======================
+
+ User Info
+ ========================
+   user.country                                                          | US
+   user.dir                                                              | /opt/artifactory-oss-6.6.0
+   user.home                                                             | /root
+   user.language                                                         | en
+   user.name                                                             | root
+   user.timezone                                                         | Etc/UTC
+
+ Host Info
+ ========================
+   Available Processors                                                  | 2
+   Heap Memory Usage-Commited                                            | 536870912
+   Heap Memory Usage-Init                                                | 536870912
+   Heap Memory Usage-Max                                                 | 2147483648
+   Heap Memory Usage-Used                                                | 249036792
+   Non-Heap Memory Usage-Commited                                        | 157777920
+   Non-Heap Memory Usage-Init                                            | 2555904
+   Non-Heap Memory Usage-Max                                             | -1
+   Non-Heap Memory Usage-Used                                            | 152117360
+   os.arch                                                               | amd64
+   os.name                                                               | Linux
+   os.version                                                            | 4.4.0-1072-aws
+
+ Artifactory Info
+ ========================
+   artifactory.runMode.test                                              | false
+   artifactory.runMode.qa                                                | false
+   artifactory.runMode.dev                                               | false
+   artifactory.runMode.devHa                                             | false
+   artifactory.version                                                   | 6.6.0
+   artifactory.revision                                                  | 60600900
+   artifactory.buildNumber                                               | 1354
+   artifactory.timestamp                                                 | 1545125231032
+   artifactory.context.path                                              | /artifactory
+   artifactory.access.context.path                                       | /access
+   artifactory.servlet.supportUrlSessionTracking                         | false
+   artifactory.addons.disabled                                           | 
+   artifactory.addons.info.url                                           | http://service.jfrog.org/artifactory/addons/info/%s
+   artifactory.addons.info.url                                           | http://www.jfrog.com/confluence/display/RTF/%s
+   artifactory.async.corePoolSize                                        | 8
+   artifactory.async.poolTtlSecs                                         | 60
+   artifactory.async.poolMaxQueueSize                                    | 10000
+   artifactory.versioningQueryIntervalSecs                               | 7200
+   artifactory.logs.viewRefreshRateSecs                                  | 10
+   artifactory.locks.timeoutSecs                                         | 120
+   artifactory.locks.debugTimeouts                                       | false
+   artifactory.task.completionLockTimeoutRetries                         | 100
+   artifactory.repo.concurrentDownloadSyncTimeoutSecs                    | 900
+   artifactory.repo.downloadStatsEnabled                                 | true
+   artifactory.repo.global.disabled                                      | true
+   artifactory.fsitem.cache.idleTimeSecs                                 | 1200
+   artifactory.docker.tokens.cache.idleTimeSecs                          | 240
+   artifactory.artifactory.tokens.cache.idleTimeSecs                     | 600
+   artifactory.cacheFS.sync.quietPeriodSecs                              | 900
+   artifactory.search.maxResults                                         | 500
+   artifactory.search.userQueryLimit                                     | 1000
+   artifactory.search.limitAnonymousUsersOnly                            | true
+   artifactory.search.content.maxFragments                               | 500
+   artifactory.search.content.maxFragmentsSize                           | 5000
+   artifactory.search.archive.minQueryLength                             | 3
+   artifactory.search.pattern.timeoutSecs                                | 30
+   artifactory.gc.useIndex                                               | false
+   artifactory.gc.intervalSecs                                           | 86400
+   artifactory.gc.delaySecs                                              | 7200
+   artifactory.gc.sleepBetweenNodesMillis                                | 20
+   artifactory.gc.scanStartSleepingThresholdMillis                       | 20000
+   artifactory.gc.scanSleepBetweenIterationsMillis                       | 200
+   artifactory.gc.fileScanSleepIterationMillis                           | 1000
+   artifactory.gc.fileScanSleepMillis                                    | 250
+   artifactory.gc.maxCacheEntries                                        | 10000
+   artifactory.gc.readersMaxTimeSecs                                     | 10800
+   artifactory.gc.failCount.threshold                                    | 3
+   artifactory.traffic.collectionActive                                  | false
+   artifactory.security.authentication.cache.initSize                    | 100
+   artifactory.security.authentication.cache.idleTimeSecs                | 300
+   artifactory.security.userLastAccessUpdatesResolutionSecs              | 5
+   artifactory.security.master.key                                       | ************************
+   artifactory.security.master.key.numOfFallbackKeys                     | *
+   artifactory.security.disableRememberMe                                | false
+   artifactory.security.ldap.forceGroupMemberAttFullDN                   | false
+   artifactory.security.ldap.disable.group.search.attributes.limitation  | false
+   artifactory.security.ldap.group.policy.cleanOnFail                    | true
+   artifactory.security.ldap.group.search.filterThreshold                | 0
+   artifactory.security.ldap.group.cacheRetentionSecs                    | 60
+   artifactory.enable.aql.read.committed                                 | false
+   artifactory.mvn.central.hostPattern                                   | .maven.org
+   artifactory.mvn.central.indexerMaxQueryIntervalSecs                   | 86400
+   artifactory.mvn.metadata.plugin.calculation.workers                   | 2
+   artifactory.mvn.metadata.calculation.workers                          | 8
+   artifactory.mvn.dynamicMetadata.cacheRetentionSecs                    | 10
+   artifactory.mvn.metadata.version3.enabled                             | true
+   artifactory.mvn.custom.types                                          | tar.gz,tar.bz2
+   artifactory.request.disableVersionTokens                              | false
+   artifactory.request.searchLatestReleaseByDateCreated                  | false
+   artifactory.npm.tag.tagLatestByPublish                                | false
+   artifactory.build.maxFoldersToScanForDeletionWarnings                 | 2
+   artifactory.build.checksum.cache.idleTimeSecs                         | 300
+   artifactory.updates.refreshIntervalSecs                               | 14400
+   artifactory.updates.url                                               | http://service.jfrog.org/artifactory/updates
+   artifactory.artifactoryRequestsToGlobalCanRetrieveRemoteArtifacts     | false
+   artifactory.ui.syntaxColoringMaxTextSizeBytes                         | 512000
+   artifactory.plugin.scripts.refreshIntervalSecs                        | 0
+   artifactory.plugin.aol.support                                        | false
+   artifactory.aol.dedicated.server                                      | false
+   artifactory.aol.displayAccountManagementLink                          | true
+   artifactory.aol.security.http.sso.enable                              | false
+   artifactory.aol.security.anon.access.enable                           | false
+   artifactory.aol.indexer.enable                                        | false
+   artifactory.ui.session.timeout.minutes                                | 30
+   artifactory.file.roller.maxFileToRetain                               | 10
+   artifactory.backup.fileExportSleepIterationMillis                     | 2000
+   artifactory.backup.fileExportSleepMillis                              | 250
+   artifactory.s3.existsCheckAfterAddingStream                           | true
+   artifactory.s3.artifacts.existence.cache.expirySecs                   | 60
+   artifactory.s3.artifacts.existence.cache.size                         | 20000
+   artifactory.http.acceptEncoding.gzip                                  | true
+   artifactory.http.useExpectContinue                                    | false
+   artifactory.http.forceForbiddenResponse                               | false
+   artifactory.http.connectionPool.timeToLive                            | 30
+   artifactory.http.enableCookieManagement                               | false
+   artifactory.filtering.resourceSizeKb                                  | 64
+   artifactory.repo.remote.checkForExistingResourceOnRequest             | true
+   artifactory.version.query.enabled                                     | true
+   artifactory.response.disableContentDispositionFilename                | false
+   artifactory.composer.metadata.extractor.workers                       | 20
+   artifactory.composer.metadata.index.workers                           | 10
+   artifactory.chef.metadata.index.workers                               | 10
+   artifactory.yum.virtual.metadata.calculation.workers                  | 5
+   artifactory.rpm.metadata.calculation.workers                          | 8
+   artifactory.rpm.metadata.history.cycles.to.keep                       | 3
+   artifactory.debian.metadata.calculation.workers                       | 8
+   artifactory.debian.coordinates.calculation.workers                    | 4
+   artifactory.debian.virtual.metadata.calculation.workers               | 5
+   artifactory.debian.remote.etag                                        | true
+   artifactory.debian.metadata.validation                                | true
+   artifactory.debian.metadata.calculateMd5InPackagesFiles               | false
+   artifactory.debian.use.acquire.byhash                                 | true
+   artifactory.debian.packages.byhash.history.cycles.to.Keep             | 3
+   artifactory.archive.licenseFile.names                                 | license,LICENSE,license.txt,LICENSE.txt,LICENSE.TXT
+   artifactory.ui.search.maxRowsPerPage                                  | 20
+   artifactory.replication.checksumDeploy.minSizeKb                      | 10
+   artifactory.replication.consumer.queueSize                            | 1
+   artifactory.replication.local.iteration.sleepThresholdMillis          | 1000
+   artifactory.replication.local.iteration.sleepMillis                   | 100
+   artifactory.replication.event.queue.size                              | 50000
+   artifactory.replication.properties.max.length                         | 100000
+   artifactory.replication.statistics.max.length                         | 5000
+   artifactory.replication.initContext.task.intervalSecs                 | 60
+   artifactory.replication.initContext.task.initialDelaySecs             | 5
+   artifactory.request.explodedArchiveExtensions                         | zip,tar,tar.gz,tgz,7z,tar.bz2
+   artifactory.bintray.jcenter.url                                       | http://jcenter.bintray.com
+   artifactory.bintray.url                                               | https://bintray.com
+   artifactory.bintray.api.url                                           | https://api.bintray.com
+   artifactory.bintray.token.expirySecs                                  | 3600
+   artifactory.bintray.distributionRegex.timeoutMillis                   | 180000
+   artifactory.bintray.ui.hideUploads                                    | false
+   artifactory.bintray.ui.hideInfo                                       | false
+   artifactory.bintray.ui.hideRemoteSearch                               | false
+   artifactory.bintray.client.threadPool.size                            | 5
+   artifactory.enable.ui.pages.in.Iframe                                 | false
+   artifactory.bintray.client.requestTimeoutMS                           | 150000
+   artifactory.bintray.client.distribution.requestTimeoutMS              | 30000
+   artifactory.bintray.client.signRequestTimeoutMS                       | 45000
+   artifactory.useUserNameAutoCompleteOnLogin                            | on
+   artifactory.ui.hideEncryptedPassword                                  | *****
+   artifactory.stats.flushIntervalSecs                                   | 30
+   artifactory.stats.remote.flushIntervalSecs                            | 35
+   artifactory.stats.flushTimeoutSecs                                    | 120
+   artifactory.integrationCleanup.intervalSecs                           | 300
+   artifactory.integrationCleanup.quietPeriodSecs                        | 60
+   artifactory.folderPruning.intervalSecs                                | 300
+   artifactory.folderPruning.quietPeriodSecs                             | 60
+   artifactory.repo.virtualCacheCleanup.maxAgeHours                      | 168
+   artifactory.repo.virtualCacheCleanup.pattern                          | *.pom
+   artifactory.security.authentication.password.salt                     | ****************
+   artifactory.db.idGenerator.fetch.amount                               | 2000
+   artifactory.db.idGenerator.max.update.retries                         | 50
+   artifactory.gems.localIndexTaskIntervalSecs                           | 30
+   artifactory.gems.virtualIndexTaskIntervalSecs                         | 300
+   artifactory.gems.gemsIndexTaskQueueLimit                              | 20000
+   artifactory.gems.gemsAfterRepoInitHack                                | true
+   artifactory.jruby.runtime.localContextMode                            | CONCURRENT
+   artifactory.security.authentication.crowd.group.startIndex            | 0
+   artifactory.security.authentication.crowd.group.maxResults            | 9999
+   artifactory.ui.hideChecksums                                          | true
+   artifactory.archive.indexer.intervalSecs                              | 60
+   artifactory.xray.indexer.intervalSecs                                 | 60
+   artifactory.xray.client.block.cache.expiration.intervalSecs           | 300
+   artifactory.xray.client.block.unscanned.cache.expiration.intervalSecs | 120
+   artifactory.xray.client.block.cache.size                              | 100000
+   artifactory.xray.client.heartbeat.intervalSecs                        | 5
+   artifactory.xray.client.max.connections                               | 50
+   artifactory.xray.client.connection.timeout.millis                     | 5000
+   artifactory.xray.client.builds.socket.timeout.millis                  | 600000
+   artifactory.xray.client.normal.socket.timeout.millis                  | 5000
+   artifactory.xray.cleanup.job.quietPeriodSecs                          | 60
+   artifactory.xray.cleanup.job.db.query.limit                           | 100
+   artifactory.xray.cleanup.job.batch.size                               | 100
+   artifactory.xray.cleanup.job.sleep.interval.millis                    | 0
+   artifactory.nuget.inMemoryRemoteCaches                                | true
+   artifactory.nuget.forceAuthentication                                 | false
+   artifactory.nuget.allowRootGetWithAnon                                | false
+   artifactory.nuget.disableSemVer2SearchFilterForLocalRepos             | false
+   artifactory.nuget.ignoreIsLatestVersionFilter                         | true
+   artifactory.ha.heartbeat.intervalSecs                                 | 5
+   artifactory.ha.heartbeat.staleSecs                                    | 30
+   artifactory.ha.heartbeat.recently.worked.trigger.days                 | 7
+   artifactory.ha.propagation.http.socketTimeoutMs                       | 5000
+   artifactory.ha.propagation.http.connectionTimeoutMs                   | 5000
+   artifactory.ha.propagation.http.maxConnectionsPerRoute                | 50
+   artifactory.ha.propagation.http.maxTotalConnections                   | 150
+   artifactory.ha.propagation.CallTimeoutSecs                            | 30
+   artifactory.binary.store.error.notification.intervalSecs              | 30
+   artifactory.binary.store.error.notification.staleSecs                 | 30
+   artifactory.ha.membersIntroduction.intervalSecs                       | 30
+   artifactory.ha.membersIntroduction.staleSecs                          | 30
+   artifactory.npm.index.quietPeriodSecs                                 | 60
+   artifactory.npm.index.cycleSecs                                       | 60
+   artifactory.npm.alternative.download.enabled                          | false
+   artifactory.import.max.parallelRepos                                  | 1
+   artifactory.debian.distribution.path                                  | dists
+   artifactory.opkg.index.quietPeriodSecs                                | 60
+   artifactory.opkg.index.cycleSecs                                      | 2
+   artifactory.debian.default.architectures                              | i386,amd64
+   artifactory.pypi.index.quietPeriodSecs                                | 60
+   artifactory.pypi.index.sleepMilliSecs                                 | 60
+   artifactory.docker.cleanup.maxAgeMillis                               | 86400000
+   artifactory.docker.tags.cleanup.intervalSecs                          | 300
+   artifactory.docker.tags.cleanup.quietPeriodSecs                       | 60
+   artifactory.http.range.support                                        | true
+   artifactory.acl.dirty.read.timeout                                    | 20000
+   artifactory.acl.minimum.wait.refresh.data.seconds                     | 30
+   artifactory.central.config.dirty.read.timeout.millis                  | 2000
+   artifactory.central.config.latest.revisions.expire.after.access.seconds| 21600
+   artifactory.central.config.latest.revisions.dictionary.size           | 20
+   artifactory.central.config.save.number.of.retries                     | 5
+   artifactory.central.config.save.backoff.max.delay                     | 8000
+   artifactory.central.config.save.backoff.multiplier                    | 2
+   artifactory.repositories.dirty.read.timeout.millis                    | 5000
+   artifactory.ping.allowUnauthenticated                                 | false
+   artifactory.repo.http.idleConnectionMonitorInterval                   | 10
+   artifactory.repo.http.disableIdleConnectionMonitoring                 | false
+   artifactory.support.core.bundle.contentCollectionAwaitTimeout         | 60
+   artifactory.support.core.bundle.waitForSlotBeforeWithdraw             | 600
+   artifactory.support.core.bundle.maxBundles                            | 5
+   artifactory.binary.provider.zones                                     | a,b,c
+   artifactory.binary.provider.prune.chunk.size                          | 500
+   artifactory.properties.search.chunk.size                              | 500
+   artifactory.security.useFrontCacheForBlockedUsers                     | true
+   artifactory.security.loginBlockDelay                                  | 500
+   artifactory.security.password.expiry.passwordExpireNotificationJobIntervalSecs| *****
+   artifactory.security.password.expiry.passwordExpireJobIntervalSecs    | *****
+   artifactory.security.password.expiry.daysToNotifyBefore               | *
+   artifactory.http.client.max.total.connections                         | 50
+   artifactory.http.client.max.connections.per.route                     | 50
+   artifactory.http.client.max.docker.token.connections                  | 2
+   artifactory.hazelcast.max.lock.lease.time.minutes                     | 30
+   artifactory.repo.remote.blockedMismatchingMimeTypes                   | text/html,application/xhtml+xml
+   artifactory.mvn.metadata.calculation.skip.delete.event                | false
+   artifactory.repo.remote.browsing.content.length.limit.KB              | 1024
+   artifactory.hazelcast.management                                      | false
+   artifactory.hazelcast.map.max.backup.count                            | 1
+   artifactory.sumologic.api.url                                         | https://auth.sumologic.com
+   artifactory.move.copy.max.folder.cache.size                           | 1000000
+   artifactory.move.copy.default.transaction.size                        | 1000
+   artifactory.node.properties.replace.all                               | false
+   artifactory.node.properties.log.performance                           | false
+   artifactory.workQueue.execution.syncExecutionTimeoutMillis            | 120000
+   artifactory.workQueue.dojob.enabled                                   | true
+   artifactory.workQueue.dojob.intervalSecs                              | 5
+   artifactory.workitem.max.lock.lease.time.minutes                      | 30
+   artifactory.ha.messages.workers                                       | 10
+   artifactory.security.communication.constant                           | ArtifactorySecurityCommunicationConstant
+   artifactory.nuget.disablePermissionCheck                              | false
+   artifactory.treebrowser.sortRepositories.sortByType                   | virtual,distribution,local,remote
+   artifactory.maven.metadata.publishModelVersion                        | true
+   artifactory.access.token.expiresIn.default                            | 3600
+   artifactory.access.token.non.admin.max.expires.in                     | 3600
+   artifactory.access.client.token.verify.result.cache.size              | -1
+   artifactory.access.client.token.verify.result.cache.expiry            | -1
+   artifactory.access.client.waitForServer                               | 90
+   artifactory.access.client.max.connections                             | 50
+   artifactory.access.client.connection.timeout                          | -1
+   artifactory.access.client.socket.timeout                              | -1
+   artifactory.access.client.ignore.server.version.assertion             | false
+   artifactory.puppet.metadata.calculation.workers                       | 5
+   artifactory.puppet.repo.metadata.calculation.workers                  | 5
+   artifactory.puppet.reindex.period                                     | 1800
+   artifactory.puppet.additional.modulegroup                             | 
+   artifactory.puppet.additional.endorsement                             | 
+   artifactory.onboarding.skipWizard                                     | false
+   artifactory.configuration.manager.retry.amount                        | 3
+   artifactory.aggregation.time.window.secs                              | 60
+   artifactory.most.downloaded.cache.idleTimeSecs                        | 900
+   artifactory.replication.eventBased.connection.maxDelay                | 1800000
+   artifactory.replications.eventbased.workers                           | 8
+   artifactory.replication.eventbased.maxQueueItems                      | 500
+   artifactory.replication.eventbased.maxPullReplicationsPerRepo         | 30
+   artifactory.build.retention.workers                                   | 10
+   artifactory.build.retention.always.async                              | false
+   artifactory.build.info.migration.job.enabled                          | true
+   artifactory.build.info.migration.job.queue.workers                    | 2
+   artifactory.locking.provider.type                                     | db
+   artifactory.db.lock.cleanup.job.interval                              | 10
+   artifactory.db.lock.cleanup.job.stale.interval                        | 10
+   artifactory.db.mssql.property.value.max.size                          | 900
+   artifactory.db.postgres.property.value.max.size                       | 2400
+   artifactory.migration.job.waitForCluster.sleepIntervalMillis          | 300000
+   artifactory.migration.job.dbQueryLimit                                | 100
+   artifactory.migration.job.batchSize                                   | 10
+   artifactory.migration.job.sleepIntervalMillis                         | 5000
+   artifactory.sha2.migration.job.queue.workers                          | 2
+   artifactory.sha2.migration.job.enabled                                | false
+   artifactory.pathChecksum.migration.job.enabled                        | false
+   artifactory.pathChecksum.migration.job.queue.workers                  | 2
+   artifactory.upload.failOnChecksumValidationError                      | false
+   artifactory.remote.download.inVain.consume.limit.inMegaBytes          | 1
+   artifactory.service.name                                              | https://localhost:8080/artifactory/webapp/
+   artifactory.helm.metadata.calculation.workers                         | 5
+   artifactory.helm.virtual.metadata.calculation.workers                 | 5
+   artifactory.cran.metadata.calculation.workers                         | 5
+   artifactory.sql.converter.allowExternalConversionScripts              | false
+   artifactory.master.key.waiting.timeout.millis                         | *****
+   artifactory.bootstrap.logger.debug                                    | false
+   artifactory.enable.context.aware.logger                               | false
+   artifactory.send.overwrites.to.trashcan                               | true
+   artifactory.trashcan.max.search.results                               | 100
+   artifactory.enable.replicator.use                                     | true
+   artifactory.start.local.replicator                                    | false
+   artifactory.min.replicator.use.filesize.in.bytes                      | 8000000
+   artifactory.block.on.conversion.cache.timeout.in.millis               | 0
+   artifactory.node.events.enabled                                       | false
+   artifactory.node.events.metrics.enabled                               | false
+   artifactory.node.events.max.time                                      | 31536000000
+   artifactory.replication.full.useEventLog                              | false
+   artifactory.replication.full.eventlog.commit.durationMillis           | 5000
+   artifactory.replication.full.eventlog.forceSuccessfulFullTree         | false
+   artifactory.replication.full.eventlog.forceFullTreeOnError            | false
+   artifactory.replication.primaryOnly                                   | true
+   artifactory.replication.errorQueue.enabled                            | false
+   artifactory.replication.errorQueue.retryCount                         | 10
+   artifactory.releasebundle.cleanup.intervalSecs                        | 3600
+   artifactory.releasebundle.distribute.streaming.intervalSecs           | 15
+   artifactory.local.port.for.replicator                                 | 8081
+   artifactory.package.native.ui.results                                 | 1000
+   artifactory.package.native.ui.include.total.downloads                 | true
+   artifactory.package.native.ui.search.by.path                          | false
+   artifactory.http.sso.create.session.ui.request.only                   | true
+   artifactory.s3.autoBucketCreation.skip                                | false
+   artifactory.global.message.cache.ageSecs                              | 10
+   artifactory.apply.local.repos.permissions.on.remote.repos             | false
+   artifactory.apply.remote.repos.permissions.on.local.repos             | false
+   artifactory.conda.metadata.calculation.workers                        | 5
+   artifactory.native.ui.search.max.time.millis                          | 60000
+   artifactory.should.include.native.prop.keys                           | ****
+   artifactory.replication.skip.check.localgenerated                     | false
+   artifactory.docker.virtual.manifest.syncer.use.heuristic              | false
+   artifactory.sql.server.query.builder.force.add.offset.to.query        | false
+   artifactory.home                                                      | /opt/artifactory-oss-6.6.0
+
+ Java System Info
+ ========================
+   java.class.version                                                    | 52.0
+   java.home                                                             | /usr/lib/jvm/java-8-oracle/jre
+   java.io.tmpdir                                                        | /opt/artifactory-oss-6.6.0/tomcat/temp
+   java.runtime.name                                                     | Java(TM) SE Runtime Environment
+   java.runtime.version                                                  | 1.8.0_191-b12
+   java.specification.name                                               | Java Platform API Specification
+   java.specification.vendor                                             | Oracle Corporation
+   java.specification.version                                            | 1.8
+   java.vendor                                                           | Oracle Corporation
+   java.vendor.url                                                       | http://java.oracle.com/
+   java.vendor.url.bug                                                   | http://bugreport.sun.com/bugreport/
+   java.version                                                          | 1.8.0_191
+   java.vm.info                                                          | mixed mode
+   java.vm.name                                                          | Java HotSpot(TM) 64-Bit Server VM
+   java.vm.specification.name                                            | Java Virtual Machine Specification
+   java.vm.specification.vendor                                          | Oracle Corporation
+   java.vm.specification.version                                         | 1.8
+   java.vm.vendor                                                        | Oracle Corporation
+   java.vm.version                                                       | 25.191-b12
+   sun.arch.data.model                                                   | 64
+   sun.boot.library.path                                                 | /usr/lib/jvm/java-8-oracle/jre/lib/amd64
+   sun.cpu.endian                                                        | little
+   sun.cpu.isalist                                                       | 
+   sun.io.unicode.encoding                                               | UnicodeLittle
+   sun.java.launcher                                                     | SUN_STANDARD
+   sun.jnu.encoding                                                      | UTF-8
+   sun.management.compiler                                               | HotSpot 64-Bit Tiered Compilers
+   sun.os.patch.level                                                    | unknown
+   JVM Input arguments                                                   | -Djava.util.logging.config.file=/opt/artifactory-oss-6.6.0/tomcat/conf/logging.properties
+                                                                         | -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+                                                                         | -Djdk.tls.ephemeralDHKeySize=****
+                                                                         | -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+                                                                         | -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+                                                                         | -Xms512m
+                                                                         | -Xmx2g
+                                                                         | -Xss256k
+                                                                         | -XX:+UseG1GC
+                                                                         | -XX:OnOutOfMemoryError=kill -9 %p
+                                                                         | -Djruby.bytecode.version=1.8
+                                                                         | -Djruby.compile.invokedynamic=false
+                                                                         | -Dfile.encoding=UTF8
+                                                                         | -Dartdist=zip
+                                                                         | -Dorg.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH=true
+                                                                         | -Djava.security.egd=file:/dev/./urandom
+                                                                         | -Dartifactory.home=/opt/artifactory-oss-6.6.0
+                                                                         | -Dfile.encoding=UTF8
+                                                                         | -Djruby.bytecode.version=1.8
+                                                                         | -Djruby.compile.invokedynamic=false
+                                                                         | -Dignore.endorsed.dirs=
+                                                                         | -Dcatalina.base=/opt/artifactory-oss-6.6.0/tomcat
+                                                                         | -Dcatalina.home=/opt/artifactory-oss-6.6.0/tomcat
+                                                                         | -Djava.io.tmpdir=/opt/artifactory-oss-6.6.0/tomcat/temp
+
+ Java Class Path Info
+ ========================
+   sun.boot.class.path                                                   | /usr/lib/jvm/java-8-oracle/jre/lib/resources.jar
+                                                                         | /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar
+                                                                         | /usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar
+                                                                         | /usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar
+                                                                         | /usr/lib/jvm/java-8-oracle/jre/lib/jce.jar
+                                                                         | /usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar
+                                                                         | /usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar
+                                                                         | /usr/lib/jvm/java-8-oracle/jre/classes
+   java.library.path                                                     | /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+   java.endorsed.dirs                                                    | /usr/lib/jvm/java-8-oracle/jre/lib/endorsed
+   java.ext.dirs                                                         | /usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext
+   java.class.path                                                       | /opt/artifactory-oss-6.6.0/tomcat/bin/bootstrap.jar
+                                                                         | /opt/artifactory-oss-6.6.0/tomcat/bin/tomcat-juli.jar
+
+2018-12-26 15:46:00,199 [art-init] [INFO ] (o.j.c.w.ConfigurationManagerImpl:445) - Replacing temporary DB channel with permanent DB channel
+2018-12-26 15:46:00,200 [art-init] [INFO ] (o.j.c.w.ConfigurationManagerImpl:445) - Successfully closed temporary DB channel
+2018-12-26 15:46:00,200 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:498) - Artifactory application context set to READY by refresh
+2018-12-26 15:46:00,270 [art-init] [INFO ] (o.a.s.a.AccessServiceImpl:1421) - Successful register of Artifactory serviceId jfrt@01czmwx9zhw05x06qpcqgd03g9 in Access Federation
+2018-12-26 15:46:00,286 [art-init] [INFO ] (o.a.w.s.ArtifactoryContextConfigListener:214) - 
+###########################################################
+### Artifactory successfully started (17.503 seconds)   ###
+###########################################################
+
+2018-12-26 15:46:02,293 [http-nio-8081-exec-3] [WARN ] (o.a.w.s.RequestUtils:153) - Request /artifactory-splash.gif should be a repo request and does not match any repo key
+2018-12-26 15:56:17,401 [http-nio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.0/hello-world-war-1.0.0.war' Content-Length: 2711
+2018-12-26 15:56:17,585 [http-nio-8081-exec-9] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.0/hello-world-war-1.0.0.war.sha1' Content-Length: 40
+2018-12-26 15:56:17,607 [http-nio-8081-exec-1] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.0/hello-world-war-1.0.0.war.md5' Content-Length: 32
+2018-12-26 15:56:17,615 [http-nio-8081-exec-10] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.0/hello-world-war-1.0.0.pom' Content-Length: 2234
+2018-12-26 15:56:17,725 [http-nio-8081-exec-3] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.0/hello-world-war-1.0.0.pom.sha1' Content-Length: 40
+2018-12-26 15:56:17,732 [http-nio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.0/hello-world-war-1.0.0.pom.md5' Content-Length: 32
+2018-12-26 15:56:17,819 [http-nio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml' Content-Length: 334
+2018-12-26 15:56:17,834 [http-nio-8081-exec-9] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml.sha1' Content-Length: 40
+2018-12-26 15:56:17,838 [http-nio-8081-exec-1] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml.md5' Content-Length: 32
+2018-12-26 15:56:52,247 [art-exec-3] [INFO ] (o.a.s.a.ArchiveIndexerImpl:146) - Indexing archive: libs-release-local:com/efsavage/hello-world-war/1.0.0/hello-world-war-1.0.0.war
+2018-12-26 15:57:24,638 [http-nio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.1/hello-world-war-1.0.1.war' Content-Length: 2713
+2018-12-26 15:57:24,668 [http-nio-8081-exec-5] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.1/hello-world-war-1.0.1.war.sha1' Content-Length: 40
+2018-12-26 15:57:24,674 [http-nio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.1/hello-world-war-1.0.1.war.md5' Content-Length: 32
+2018-12-26 15:57:24,681 [http-nio-8081-exec-7] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.1/hello-world-war-1.0.1.pom' Content-Length: 2234
+2018-12-26 15:57:24,698 [http-nio-8081-exec-8] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.1/hello-world-war-1.0.1.pom.sha1' Content-Length: 40
+2018-12-26 15:57:24,702 [http-nio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.1/hello-world-war-1.0.1.pom.md5' Content-Length: 32
+2018-12-26 15:57:24,732 [http-nio-8081-exec-10] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml' Content-Length: 365
+2018-12-26 15:57:24,749 [http-nio-8081-exec-3] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml.sha1' Content-Length: 40
+2018-12-26 15:57:24,754 [http-nio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml.md5' Content-Length: 32
+2018-12-26 15:57:52,241 [art-exec-4] [INFO ] (o.a.s.a.ArchiveIndexerImpl:146) - Indexing archive: libs-release-local:com/efsavage/hello-world-war/1.0.1/hello-world-war-1.0.1.war
+2018-12-26 16:00:00,046 [art-exec-5] [INFO ] (o.a.r.s.t.p.TrashcanPruner:96) - Trashcan pruning total execution time: '35 millis'
+2018-12-26 16:00:00,068 [art-exec-5] [INFO ] (o.a.s.d.b.s.BinaryServiceImpl:543) - Found 5 candidates for deletion
+2018-12-26 16:00:00,155 [art-exec-5] [INFO ] (o.a.s.b.s.GarbageCollectorInfo:80) - Storage garbage collector report:
+Number of binaries:      12
+Total execution time:    107 millis
+Candidates for deletion: 5
+Checksums deleted:       5
+Binaries deleted:        5
+Total size freed:        1.78 KB
+Current total size:      14.93 KB
+2018-12-26 16:01:03,771 [http-nio-8081-exec-8] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.1/hello-world-war-1.0.1.war' Content-Length: 2717
+2018-12-26 16:01:03,814 [http-nio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.1/hello-world-war-1.0.1.war.sha1' Content-Length: 40
+2018-12-26 16:01:03,821 [http-nio-8081-exec-9] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.1/hello-world-war-1.0.1.war.md5' Content-Length: 32
+2018-12-26 16:01:03,827 [http-nio-8081-exec-1] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.1/hello-world-war-1.0.1.pom' Content-Length: 2235
+2018-12-26 16:01:03,871 [http-nio-8081-exec-10] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.1/hello-world-war-1.0.1.pom.sha1' Content-Length: 40
+2018-12-26 16:01:03,876 [http-nio-8081-exec-3] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.1/hello-world-war-1.0.1.pom.md5' Content-Length: 32
+2018-12-26 16:01:03,906 [http-nio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml' Content-Length: 365
+2018-12-26 16:01:03,918 [http-nio-8081-exec-7] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml.sha1' Content-Length: 40
+2018-12-26 16:01:03,921 [http-nio-8081-exec-8] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml.md5' Content-Length: 32
+2018-12-26 16:01:52,241 [art-exec-2] [INFO ] (o.a.s.a.ArchiveIndexerImpl:146) - Indexing archive: libs-release-local:com/efsavage/hello-world-war/1.0.1/hello-world-war-1.0.1.war
+2018-12-26 17:34:02,082 [http-nio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.war' Content-Length: 2721
+2018-12-26 17:34:02,102 [http-nio-8081-exec-5] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.war.sha1' Content-Length: 40
+2018-12-26 17:34:02,108 [http-nio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.war.md5' Content-Length: 32
+2018-12-26 17:34:02,114 [http-nio-8081-exec-7] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.pom' Content-Length: 2235
+2018-12-26 17:34:02,126 [http-nio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.pom.sha1' Content-Length: 40
+2018-12-26 17:34:02,134 [http-nio-8081-exec-8] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.pom.md5' Content-Length: 32
+2018-12-26 17:34:02,167 [http-nio-8081-exec-1] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml' Content-Length: 396
+2018-12-26 17:34:02,180 [http-nio-8081-exec-10] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml.sha1' Content-Length: 40
+2018-12-26 17:34:02,182 [http-nio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml.md5' Content-Length: 32
+2018-12-26 17:34:52,240 [art-exec-4] [INFO ] (o.a.s.a.ArchiveIndexerImpl:146) - Indexing archive: libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.war
+2018-12-26 17:39:04,883 [http-nio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.war' Content-Length: 2721
+2018-12-26 17:39:04,907 [http-nio-8081-exec-5] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.war.sha1' Content-Length: 40
+2018-12-26 17:39:04,911 [http-nio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.war.md5' Content-Length: 32
+2018-12-26 17:39:04,916 [http-nio-8081-exec-7] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.pom' Content-Length: 2235
+2018-12-26 17:39:04,939 [http-nio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.pom.sha1' Content-Length: 40
+2018-12-26 17:39:04,943 [http-nio-8081-exec-8] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.pom.md5' Content-Length: 32
+2018-12-26 17:39:04,967 [http-nio-8081-exec-3] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml' Content-Length: 396
+2018-12-26 17:39:04,976 [http-nio-8081-exec-1] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml.sha1' Content-Length: 40
+2018-12-26 17:39:04,978 [http-nio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml.md5' Content-Length: 32
+2018-12-26 17:39:52,240 [art-exec-7] [INFO ] (o.a.s.a.ArchiveIndexerImpl:146) - Indexing archive: libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.war
+2018-12-26 17:41:22,270 [http-nio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.war' Content-Length: 2721
+2018-12-26 17:41:22,321 [http-nio-8081-exec-7] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.war.sha1' Content-Length: 40
+2018-12-26 17:41:22,326 [http-nio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.war.md5' Content-Length: 32
+2018-12-26 17:41:22,331 [http-nio-8081-exec-8] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.pom' Content-Length: 2235
+2018-12-26 17:41:22,355 [http-nio-8081-exec-9] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.pom.sha1' Content-Length: 40
+2018-12-26 17:41:22,359 [http-nio-8081-exec-10] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.pom.md5' Content-Length: 32
+2018-12-26 17:41:22,393 [http-nio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:376) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml' Content-Length: 396
+2018-12-26 17:41:22,403 [http-nio-8081-exec-5] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml.sha1' Content-Length: 40
+2018-12-26 17:41:22,405 [http-nio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:255) - Deploy to 'libs-release-local:com/efsavage/hello-world-war/maven-metadata.xml.md5' Content-Length: 32
+2018-12-26 17:41:52,240 [art-exec-7] [INFO ] (o.a.s.a.ArchiveIndexerImpl:146) - Indexing archive: libs-release-local:com/efsavage/hello-world-war/1.0.2/hello-world-war-1.0.2.war
+2018-12-26 17:49:41,889 [localhost-startStop-5] [INFO ] (o.a.s.ArtifactoryApplicationContext:498) - Artifactory application context set to NOT READY by destroy
+2018-12-26 17:49:41,898 [Thread-6] [INFO ] (o.j.c.w.FileWatchingManager:123) - Watch service ended on destroy
+2018-12-26 17:49:41,898 [Thread-6] [INFO ] (o.j.c.w.FileWatchingManager:129) - End watch of folder configurations
+2018-12-26 17:49:41,902 [localhost-startStop-5] [INFO ] (o.a.s.ArtifactoryApplicationContext:335) - Destroying 39 Artifactory Spring Beans
+2018-12-26 17:49:41,906 [localhost-startStop-5] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:43) - Removing all job Garbage Collector from task service handler.
+2018-12-26 17:49:41,907 [localhost-startStop-5] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:43) - Removing all job Backup from task service handler.
+2018-12-26 17:49:41,908 [localhost-startStop-5] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:43) - Removing all job Indexer from task service handler.
+2018-12-26 17:49:41,909 [localhost-startStop-5] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:43) - Removing all job Artifact Cleanup from task service handler.
+2018-12-26 17:49:41,931 [localhost-startStop-5] [INFO ] (o.a.s.ArtifactoryApplicationContext:353) - Closing artifactory: startup date [Wed Dec 26 15:45:43 UTC 2018]; root of context hierarchy
+2018-12-26 17:49:41,944 [localhost-startStop-5] [INFO ] (o.a.s.ArtifactorySchedulerFactoryBean:765) - Shutting down Quartz Scheduler

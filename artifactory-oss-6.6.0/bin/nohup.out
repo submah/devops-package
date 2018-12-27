@@ -1,0 +1,16 @@
+artifactory.sh: 208: artifactory.sh: Bad substitution
+artifactory.sh: 217: [: unexpected operator
+trap: SIGINT: bad trap
+artifactory.sh: 183: artifactory.sh: [[: not found
+-p: not found
+java: not found
+No java found
+artifactory.sh: 192: artifactory.sh: [[: not found
+artifactory.sh: 52: [: unexpected operator
+Neither the JAVA_HOME nor the JRE_HOME environment variable is defined
+At least one of these environment variable is needed to run this program
+No java found
+ln: failed to create symbolic link '/opt/artifactory-oss-6.6.0/tomcat/logs/catalina': File exists
+
+[31m** Could not create link from /opt/artifactory-oss-6.6.0/tomcat/logs to /opt/artifactory-oss-6.6.0/logs/catalina[0m
+
