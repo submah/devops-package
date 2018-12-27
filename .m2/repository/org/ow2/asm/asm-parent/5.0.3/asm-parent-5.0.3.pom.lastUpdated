@@ -1,0 +1,9 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Dec 26 13:46:58 UTC 2018
+http\://10.155.73.149\:8081/artifactory/libs-release-local/.error=
+https\://repo.spring.io/snapshot/.error=
+http\://10.155.73.149\:8081/artifactory/libs-release-local/.lastUpdated=1545832018074
+https\://repo.spring.io/milestone/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1545832018483
+https\://repo.spring.io/milestone/.lastUpdated=1545832018440
+https\://repo.spring.io/snapshot/.lastUpdated=1545832018257

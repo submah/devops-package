@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.springframework.data</groupId>
+  <artifactId>spring-data-releasetrain</artifactId>
+  <version>Ingalls-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20181226.032800</timestamp>
+      <buildNumber>616</buildNumber>
+    </snapshot>
+    <lastUpdated>20181226032920</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>Ingalls-BUILD-20181226.032800-616</value>
+        <updated>20181226032800</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
